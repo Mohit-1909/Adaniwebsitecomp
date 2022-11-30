@@ -1,0 +1,50 @@
+*{
+    margin:0
+}
+
+.titlebar{
+    max-height: 100px;
+    background-color: rgb(175, 0, 214);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    width: 100%;
+}
+.titlebar>div{
+    margin: 10px;
+}
+.logo-img{
+    height: 80px;
+}
+.titlebar-buttons{
+    display: flex;
+    justify-content: center;
+}
+.titlebar-buttons>div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.titlebar-buttons>div>button{
+    background-color: rgb(175, 0, 214); 
+    border: none;
+    color: white;
+    margin: 3px;
+}
+.titlebar-buttons>div>button>img{
+    width: 40px;
+}
+.homepage-welcome-animation-container{
+    position: fixed;
+    top:100px;
+    width: 100%;
+}
+.homepage-welcome-animation{
+    width: 80vw;
+    margin: auto;
+}
+.homepage-welcome-animation>img{
+    width: 80vw;
+    max-height: 85vh;
+}
