@@ -11,6 +11,7 @@
     padding-right: 10px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 .titlebar>div{
     margin: 10px;
@@ -39,12 +40,60 @@
     position: fixed;
     top:100px;
     width: 100%;
+    z-index: -1;
 }
 .homepage-welcome-animation{
-    width: 80vw;
-    margin: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .homepage-welcome-animation>img{
-    width: 80vw;
+    width: 100%;
     max-height: 85vh;
+}
+.homepage-main-content{
+    background-color: white;
+    position: relative;
+    z-index: 0;
+    top: 100vh;
+}
+.homepage-AiieAiim-buttons{
+    display: flex;
+    margin: auto;
+    width: 100vw;
+    justify-content: space-between;
+}
+.homepage-AiieAiim-buttons>div{
+    text-align: center;
+}
+.divider{
+    height: 85vh;
+    border-left: 4px solid black;
+    margin: auto;
+    border-radius: 10px;
+}
+@keyframes aiieaiim{
+    from {width: 0px;}
+    to {width: 45vw;}
+}
+.animated{
+    height: 80vh;
+    width: 45vw;
+    margin: auto;
+    box-sizing: border-box;
+}
+.homepage-AiieAiim-buttons>div>button{
+    border: 1px solid black;
+    width: 45vw;
+    height: 80vh;
+    box-sizing: border-box;
+    background-color: white;
+    overflow-x: hidden;
+    animation: aiieaiim 3s;
+}
+.AIIM>button{
+    float: right;
+}
+.AIIE>button{
+    float: left;
 }
